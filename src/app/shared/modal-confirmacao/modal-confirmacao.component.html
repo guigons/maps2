@@ -1,0 +1,30 @@
+<ion-content>
+
+  <ion-grid style="padding: 80px 40px 0px 40px">
+
+    <ion-text color="danger">
+      <h3>{{titulo}}</h3>
+    </ion-text>
+
+    <ion-row align-items-center style="margin-bottom: 30px">
+      {{texto}}
+    </ion-row>
+
+    <ion-row align-items-center>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="sim()" color="primary">{{okTexto}}</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="nao()" color="medium">{{cancelarTexto}}</ion-button>
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

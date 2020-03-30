@@ -1,0 +1,49 @@
+<ion-content>
+
+  <div class="ion-padding">
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <!-- Nothing -->
+        </ion-col>
+        <ion-col style="padding-top: 200px;">
+
+          <ion-card>
+
+            <ion-card-content>
+
+              <form [formGroup]="formCredential" (keydown)="onKeyDown($event)">
+
+                <ion-list>
+                  <ion-item>
+                    <ion-label position="floating">Usuário</ion-label>
+                    <ion-input formControlName="usuario"></ion-input>
+                  </ion-item>
+
+                  <ion-item>
+                    <ion-label position="floating">Senha</ion-label>
+                    <ion-input formControlName="senha"></ion-input>
+                  </ion-item>
+                </ion-list>
+
+                <ion-button expand="full" style="margin-top: 40px;" (click)="entrar()" [attr.disabled]="formCredential?.dirty && formCredential?.valid ? null:true" >ENTRAR</ion-button>
+
+                <!-- <app-form-debug [form]="formCredential"></app-form-debug> -->
+
+              </form>
+
+            </ion-card-content>
+
+          </ion-card>
+
+        </ion-col>
+        <ion-col>
+          <!-- Nothing -->
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+</ion-content>

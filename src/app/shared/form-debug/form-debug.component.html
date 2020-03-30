@@ -1,0 +1,14 @@
+<div style="border: 1px solid black; background-color: #ddd">
+  <div>
+    Detalhes do Form:
+  </div>
+  <pre>
+    Form Valido: {{ form.valid }}
+    Form Touched: {{ form.touched}}
+    Form Pristine: {{ form.pristine}}
+    Valores: <br> {{ form.value | json }}
+  </pre>
+  <pre>
+    Form Erros: {{ form.errors | json}}
+  </pre>
+</div>

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        <ion-icon slot="icon-only" name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+
+    <ion-list>
+      <ion-item (click)="go.navigate(['/home','teste'])">
+        <ion-label>Teste</ion-label>
+        <ion-icon name="filing" slot="end"></ion-icon>
+      </ion-item>
+    </ion-list>
+
+  </div>
+</ion-content>

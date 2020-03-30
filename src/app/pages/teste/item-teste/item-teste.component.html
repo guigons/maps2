@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="go.navigate('back')">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      TITULOS
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="ion-padding">
+
+    <ion-text color="primary" *ngIf="teste$ | async as teste;">
+      {{teste | json}}
+    </ion-text>
+
+  </div>
+
+</ion-content>
